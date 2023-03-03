@@ -5,7 +5,7 @@ databases:
 
 services:
   - type: web
-    name: Jhonella First App 
+    name: Jhonella App 
     env: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
