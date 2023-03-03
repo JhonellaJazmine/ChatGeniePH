@@ -5,14 +5,14 @@ databases:
 
 services:
   - type: web
-    name: Jhonella First App
+    name: Jhonella First App 
     env: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: hello_5a12
+          name: Hello
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
